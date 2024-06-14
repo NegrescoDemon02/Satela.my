@@ -1,0 +1,239 @@
+* {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/image/wallpaper.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin-top: 60px; /* Adiciona um espaçamento no topo para evitar sobreposição do navbar */
+}
+
+#navbar {
+    width: 100%;
+    padding: 1em 2em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para o navbar */
+    z-index: 1000; /* Certifique-se de que o navbar está acima de outros conteúdos */
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+#navbar ul li {
+    margin-left: 1em;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    background-color: #9076F5;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #775be8;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #aa9ae8;
+    transform: translateY(0);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(168, 105, 227, 0.4);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.content-center {
+    max-width: 800px;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.content-center h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.content-center p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.button-group {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: #775be8;
+    padding: 0.7em 1.5em;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #5a41c8;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #775be8;
+    color: #775be8;
+    padding: 0.7em 1.5em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #775be8;
+    color: #fff;
+}
+
+/* Gradiente no texto do h1 */
+.gradient-text {
+    background: linear-gradient(to right, #a796ea, #442ba5);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Planos */
+
+.plans-container {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: #0C1028;
+}
+
+.plans-container h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.plans-container h2 .highlight {
+    background: linear-gradient(to right, #9076F5, #AA9AE8);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.plans-container p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.plans-container p .highlight {
+    background: linear-gradient(to right, #9076F5, #AA9AE8);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background: #0C1028;
+    padding: 1.5em;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.plan h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #9076F5;
+}
+
+.plan .price {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: #737275;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.plan ul li {
+    margin-bottom: 0.5em;
+    text-align: left;
+    font-size: 13.6px;
+}
+
+.plan ul li::before {
+    /* content: '✔️'; */
+    margin-right: 0.5em;
+    color: #9076F5;
+}
+
+.custom-check-icon {
+    color: #60BF80;
+}
+
+.btn-plan {
+    background: linear-gradient(to right, #9076F5, #AA9AE8);
+    border: none;
+    padding: 0.7em 1.5em;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-plan:hover {
+    background: linear-gradient(to right, #775be8, #5a41c8);
+}
