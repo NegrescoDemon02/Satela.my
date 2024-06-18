@@ -143,7 +143,8 @@ button:focus {
 .plans-container {
     text-align: center;
     padding: 2em 1em;
-    background-color: #0C1028;
+    /* background-color: #5064d3; */
+    background-color: #06091A;
 }
 
 .plans-container h2 {
@@ -237,3 +238,88 @@ button:focus {
 .btn-plan:hover {
     background: linear-gradient(to right, #775be8, #5a41c8);
 }
+
+/* Footer */
+.footer {
+    background-image: url("/image/image.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 2em 1em;
+    text-align: center;
+    position: relative;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 16, 40, 0.8); /* Cor de fundo com opacidade para melhorar a legibilidade */
+    z-index: 0;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo {
+    font-size: 1.5em;
+    color: #a796ea;
+    margin-bottom: 0.5em;
+}
+
+.footer h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: #a796ea;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 0.5em;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #a796ea;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #a796ea;
+}
+
